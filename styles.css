@@ -97,7 +97,9 @@ font-weight: bold;
 /*#endregion index.html*/
 
 /*#region numberofseats.html*/
-
+.margin-left10{
+    margin-left: 10px;
+}
 .margin-top10{
     margin-top: 10px;
 }

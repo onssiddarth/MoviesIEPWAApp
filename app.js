@@ -48,6 +48,7 @@ $(function () {
 })
 
 function RedirectToSeatSelection() {
+    $("#inputInvalid").hide();
     var numberofSeats = 0;
     var status = false;
     $("select").each(function () {
@@ -61,7 +62,7 @@ function RedirectToSeatSelection() {
         location.href = "seatselection.html";
     }
     else {
-        alert(numberofSeats);
+        $("#inputInvalid").show();
     }
 }
 
