@@ -1,0 +1,542 @@
+<!-- Created By
+Id: 10376001
+Name: Siddarth Nair 
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+        Movies-At Dundrum - Movies - Home
+    </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <script src="app.js"></script>
+    <link rel="manifest" href="manifest.json">
+</head>
+
+<body onload="selectedMovieDetails()">
+    <div class="container bg-light container-margin">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1 class="displaytitle">MOVIES @ DUNDRUM</h1>
+            </div>
+        </div>
+    </div>
+    <div class="container bg-light round-container">
+        <br/>
+        <div class="col-md-12 text-center round-corners2">
+            <h3>Select you seats</h3>
+        </div>
+        <br/>
+        <div class="row">
+            <div class="col-md-8 col-sm-12 col-xs-12">
+                <div>
+                    <center>
+                        <table>
+                            <tr>
+                                <td colspan="14">
+                                    <div class="screen">SCREEN</div>
+                                </td>
+
+                                <br/>
+                            </tr>
+
+                            <tr>
+                                <td></td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                                <td>5</td>
+                                <td></td>
+                                <td>6</td>
+                                <td>7</td>
+                                <td>8</td>
+                                <td>9</td>
+                                <td>10</td>
+                                <td>11</td>
+                                <td>12</td>
+                            </tr>
+
+                            <tr>
+                                <td class="seatRow">A</td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="A1">
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="A2">
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="A3">
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="A4">
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="A5">
+                                </td>
+                                <td class="seatHorizontalGap"></td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="A6">
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="A7">
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="A8">
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="seat" disabled value="A9">
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="A10">
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="A11">
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="A12">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="seatRow">B</td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="B1">
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="B2">
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="B3">
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="B4">
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="B5">
+                                </td>
+                                <td></td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="B6">
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="B7">
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="B8">
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="B9">
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="B10">
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="B11">
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="B12">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="seatRow">C</td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="C1">
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="C2">
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="C3">
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="C4">
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="C5">
+                                </td>
+                                <td></td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="C6">
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="C7">
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="C8">
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="C9">
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="C10">
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="C11">
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="C12">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="seatRow">D</td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="D1">
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="D2">
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="D3">
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="D4">
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="D5">
+                                </td>
+                                <td></td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="D6">
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="D7">
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="D8">
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="D9">
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="D10">
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="D11">
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="D12">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="seatRow">E</td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="E1">
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="E2">
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="E3">
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="E4">
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="seat" disabled value="E5">
+                                </td>
+                                <td></td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="E6">
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="E7">
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="E8">
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="E9">
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="E10">
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="E11">
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="E12">
+                                </td>
+                            </tr>
+
+                            <tr class="seatVerticalGap"></tr>
+
+                            <tr>
+                                <td class="seatRow">F</td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="F1">
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="F2">
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="F3">
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="F4">
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="F5">
+                                </td>
+                                <td></td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="F6">
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="F7">
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="seat" disabled value="F8">
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="F9">
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="F10">
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="F11">
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="F12">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="seatRow">G</td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="G1">
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="G2">
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="G3">
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="G4">
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="G5">
+                                </td>
+                                <td></td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="G6">
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="G7">
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="G8">
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="G9">
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="G10">
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="G11">
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="G12">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="seatRow">H</td>
+                                <td>
+                                    <input type="checkbox" class="seat" disabled value="H1">
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="H2">
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="H3">
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="H4">
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="H5">
+                                </td>
+                                <td></td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="H6">
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="H7">
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="H8">
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="H9">
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="H10">
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="H11">
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="H12">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="seatRow">I</td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="I1">
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="I2">
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="I3">
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="I4">
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="I5">
+                                </td>
+                                <td></td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="I6">
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="I7">
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="I8">
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="I9">
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="I10">
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="I11">
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="I12">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="seatRow">J</td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="J1">
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="J2">
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="J3">
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="J4">
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="J5">
+                                </td>
+                                <td></td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="J6">
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="J7">
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="J8">
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="J9">
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="J10">
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="J11">
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="seat" value="J12">
+                                </td>
+                            </tr>
+                        </table>
+                        <br/>
+                        <table>
+                            <tr>
+                                <td>
+                                    <div class="divBox reservedSeat padding-right10">Reserved</div>
+                                </td>
+                                <td>
+                                    <div class="divBox selectedSeat padding-right10">Selected</div>
+                                </td>
+                                <td>
+                                    <div class="divBox availableSeat padding-right10">Available</div>
+                                </td>
+                            </tr>
+                        </table>
+                        <br/>
+                        <input type="submit" id="btnConfirmBooking" class="btn btn-success" value="Confirm Booking" onclick="updateSeatInformation()">
+                        <input type="button" id="btnGoToHome" class="btn btn-success" value="Go to Home" onclick="RedirectToMainPage()" style="display: none;">
+                        <br/>
+                    </center>
+                    <br/>
+                </div>
+                <br/>
+            </div>
+
+            <div class="col-md-4 col-sm-12 col-xs-12">
+                <div class="card">
+                    <img class="card-img-top" src="images/movie.jpg" alt="movie">
+                    <div class="card-body">
+                        <h2 id="selMovieTitle"></h2>
+                        <p class="movie-tag-text">Starring &nbsp;
+                            <span id="selMovieCast" class="cast"></span>
+                        </p>
+                        <p class="movie-tag-text">Directed by &nbsp;
+                            <span id="selMovieDirector" class="cast"></span>
+                        </p>
+                        <p>
+                            <span id="selMovieGenre" class="genre"></span>
+                        </p>
+                        <p>
+                            <span id="selMovieTime"></span>
+                        </p>
+                        <p>Seat(s): &nbsp;
+                            <span id="seatsDisplay" class="selSeats"></span>
+                        </p>
+                    </div>
+                </div>
+                <div id="thanks" class="alert alert-block alert-success" style="display: none;">
+                    <a class="close" data-dismiss="alert" href="#">X</a>
+                    <h4 class="alert-heading">Success!</h4>
+                    Congratulations, you have successfully booked.
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <br/>
+    <br/>
+</body>
+
+</html>

@@ -1,0 +1,394 @@
+<!-- Created By
+Id: 10376001
+Name: Siddarth Nair 
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+        Movies-At Dundrum - Movies - Home
+    </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <script src="app.js"></script>
+    <link rel="manifest" href="manifest.json">
+</head>
+
+<body onload="selectedMovieDetails()">
+    <div class="container bg-light container-margin">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1 class="displaytitle">MOVIES @ DUNDRUM</h1>
+            </div>
+        </div>
+    </div>
+    <div class="container bg-light round-container">
+        <br/>
+        <div class="col-md-12 text-center round-corners2">
+
+            <h3>Choose the number of seats</h3>
+        </div>
+        <br/>
+        <div class="row">
+            <div class="col-md-8 col-sm-12 col-xs-12">
+
+                <div class="row">
+                    <div class="col-md-3">
+                        <form>
+                            <div class="form-group">
+                                <select class="form-control" id="select1">
+                                    <option value="-1">None</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-9">
+                        <form>
+                            <div class="form-group">
+                                <label for="select1">Large Sweet Combo Deal + Tickets @ 21.45</label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <form>
+                            <div class="form-group">
+                                <select class="form-control" id="select2">
+                                    <option value="-1">None</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>>
+                                </select>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-9">
+                        <form>
+                            <div class="form-group">
+                                <label for="select2">Medium Sweet Combo Deal + Tickets @ 20.45</label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <form>
+                            <div class="form-group">
+                                <select class="form-control" id="select3">
+                                    <option value="-1">None</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-9">
+                        <form>
+                            <div class="form-group">
+                                <label for="select3">Medium Combo Deal + Tickets @ 18.45</label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <form>
+                            <div class="form-group">
+                                <select class="form-control" id="select4">
+                                    <option value="-1">None</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-9">
+                        <form>
+                            <div class="form-group">
+                                <label for="select4">Duo Combo Deal + 2 Tickets @ 33.00</label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <form>
+                            <div class="form-group">
+                                <select class="form-control" id="select5">
+                                    <option value="-1">None</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-9">
+                        <form>
+                            <div class="form-group">
+                                <label for="select5">Kids Combo Deal + Tickets @ 12.45</label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <form>
+                            <div class="form-group">
+                                <select class="form-control" id="select6">
+                                    <option value="-1">None</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-9">
+                        <form>
+                            <div class="form-group">
+                                <label for="select6">Monday Meal Deal - Large Combo + Tickets @ 9.95</label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <form>
+                            <div class="form-group">
+                                <select class="form-control" id="select7">
+                                    <option value="-1">None</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-9">
+                        <form>
+                            <div class="form-group">
+                                <label for="select7">Adult Tickets @ 11.20</label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <form>
+                            <div class="form-group">
+                                <select class="form-control" id="select8">
+                                    <option value="-1">None</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-9">
+                        <form>
+                            <div class="form-group">
+                                <label for="select8">Child Tickets @ 8.50</label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <form>
+                            <div class="form-group">
+                                <select class="form-control" id="select9">
+                                    <option value="-1">None</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-9">
+                        <form>
+                            <div class="form-group">
+                                <label for="select9">Family * 4 Tickets @ 32.00</label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <form>
+                            <div class="form-group">
+                                <select class="form-control" id="select10">
+                                    <option value="-1">None</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-9">
+                        <form>
+                            <div class="form-group">
+                                <label for="select10">Student Tickets @ 9.00</label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <form>
+                            <div class="form-group">
+                                <select class="form-control" id="select11">
+                                    <option value="-1">None</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-9">
+                        <form>
+                            <div class="form-group">
+                                <label for="select11">Senior Tickets @ 9.00</label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="row padding10">
+                    <table>
+                        <tr>
+                            <td>
+                                <button type="button" class="btn btn-success" onclick="RedirectToMainPage()">Cancel</button>
+                            </td>
+                            <td>
+                                <button type="button" class="btn btn-primary" onclick="RedirectToSeatSelection()">Proceed</button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+            <div class="col-md-4  col-sm-12 col-xs-12">
+                <div class="card">
+                    <img class="card-img-top" src="images/movie.jpg" alt="movie">
+                    <div class="card-body">
+                        <h2 id="selMovieTitle"></h2>
+                        <p class="movie-tag-text">Starring &nbsp;
+                            <span id="selMovieCast" class="cast"></span>
+                        </p>
+                        <p class="movie-tag-text">Directed by &nbsp;
+                            <span id="selMovieDirector" class="cast"></span>
+                        </p>
+                        <p>
+                            <span id="selMovieGenre" class="genre"></span>
+                        </p>
+                        <p>
+                            <span id="selMovieTime"></span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br/>
+    </div>
+    <br/>
+    <br/>
+</body>
+
+</html>

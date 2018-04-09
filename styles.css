@@ -1,0 +1,226 @@
+  /* Created By
+ Id: 10376001
+ Name: Siddarth Nair  */
+
+/*#region General*/
+body  {
+background-image: url("images/mercy2.jpg");
+background-size:100%;
+background-repeat: no-repeat;
+background-attachment: fixed;
+}
+
+/* h1 {
+font-weight: bold;
+color: black;
+font-size: 30px;
+} */
+
+.displaytitle{
+font-size: 6rem;
+font-weight: 300;
+line-height: 1.2;
+}
+@media only screen and (max-width: 768px){
+.displaytitle{
+font-size: 50px;
+font-weight: 300;
+line-height: 1.2;
+}
+}
+
+.container-margin {
+margin-top:100px;
+margin-bottom:10px;
+border-radius: 10px;}
+
+table
+{
+text-align:center;
+}
+/*#endregion General*/
+
+/*#region index.html*/
+
+.round-top-container{
+    border-radius: 10px 10px 0px 0px;
+}
+.round-bottom-container{
+    border-radius: 0px 0px 10px 10px;
+}
+.btn-huge{
+margin-top:20px;
+padding-top:20px;
+padding-bottom:20px;
+}
+.padding-top10{
+padding:10px 0px 0px 0px;
+}
+.padding10{
+padding:10px;
+}
+.timeBtn:hover {
+opacity: 0.5;
+}
+
+.timeBtn{
+background-color: #E4C30E;
+color: #00345F;
+font-weight: bold;
+}
+
+.movie-tag-text{
+   color: #333333;
+   font-size: 12px;
+}
+.cast{
+    color: #666;
+    font-size: 16px;
+}
+
+.director{
+    font-size: 16px;
+}
+.genre{
+    border: 1px solid #212529;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 10px;
+    display: inline-block;
+    margin-top: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: #212529;
+}
+/*#endregion index.html*/
+
+/*#region numberofseats.html*/
+
+.margin-top10{
+    margin-top: 10px;
+}
+.round-corners {
+border-radius: 10px;
+border: 2px solid #4388CC;
+background: #4388CC;
+color:white;
+padding: 10px;
+margin: 5px;
+overflow:auto;
+max-height: 300px;
+}
+.round-corners2 {
+    border-radius: 10px;
+    border: 1px solid #4388CC;
+    background: #4388CC;
+    color:white;
+    overflow:auto;
+    max-height: 300px;
+    }
+/*#endregion numberofseats.html*/
+
+/*#region seatselection.html*/
+.padding-right10{
+padding:0px 10px 0px 0px;
+}
+.screen
+{
+width:100%;
+height:20px;
+background:#4388cc;
+color:#fff;
+line-height:20px;
+font-size:15px;
+}
+.divBox::before
+{
+content:".";
+width:15px;
+height:15px;
+float:left;
+margin-top:5px;
+margin-right:5px;
+}
+.selectedSeat::before
+{
+content:"";
+background:Green;
+}
+.reservedSeat::before
+{
+content:"";
+background:Red;
+}
+.availableSeat::before
+{
+content:"";
+box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);
+background-color:#ccc;
+}
+
+.seat
+{
+border:1px solid red;background:yellow;
+}
+.seatRow{
+padding:20px 10px 0px 0px;
+}
+
+.seatHorizaontalGap
+{
+width:40px;
+}
+
+.seatVerticalGap
+{
+height:40px;
+}
+
+input[type=checkbox] {
+zoom:0;
+width:0px; 
+margin-right:18px;
+}
+@media only screen and (orientation: landscape) {
+input[type=checkbox] {
+zoom:2;
+width:0px; 
+margin-right:18px;
+}
+}
+
+input[type=checkbox]:before {
+content: "";
+width: 15px;
+height: 15px;
+display: inline-block;
+vertical-align:middle;
+text-align: center;
+box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);
+background-color:#ccc;
+}
+
+input[type=checkbox]:checked:before {
+background-color:Green;
+font-size: 15px;
+}
+
+input[type=checkbox]:disabled:before {
+background-color:red;
+font-size: 15px;
+}
+.margin20{
+margin-top:20px;
+}
+
+.selSeats{
+    font-weight: bold;
+    line-height: 1;
+}
+
+.round-container{
+    border-radius: 10px;
+}
+/*#endregion seatselection.html*/
