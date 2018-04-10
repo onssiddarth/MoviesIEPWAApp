@@ -186,3 +186,12 @@ function selectedMovieDetails() {
     $('#selMovieCast').html(storedMovieCast);
     $('#selMovieDirector').html(storedMovieDirector);
 }
+
+function MakeNavResponsive() {
+    var x = document.getElementById("mynavibar");
+    if (x.className === "navibar") {
+        x.className += " responsive";
+    } else {
+        x.className = "navibar";
+    }
+}
