@@ -1,0 +1,130 @@
+<!-- Created By
+Id: 10376001
+Name: Siddarth Nair 
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+        Movies-At Dundrum - Movies - Home
+    </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <script src="app.js"></script>
+    <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+    <div class="container bg-light container-margin">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1 class="displaytitle">MOVIES @ DUNDRUM</h1>
+            </div>
+        </div>
+    </div>
+    <div class="container bg-light round-container">
+        <div class="row">
+            <div class="col-md-12 round-container margin-top10">
+                <div class="navibar" id="mynavibar">
+                    <a href="index.html">Home</a>
+                    <a href="#kidsclub">Kids Club</a>
+                    <a href="#eventcinema">Event Cinema</a>
+                    <a href="#comingsoon">Coming Soon</a>
+                    <a href="#competitions">Competitions</a>
+                    <a href="#themezz">The Mezz</a>
+                    <a href="contactus.html"  class="navactive">Contact Us</a>
+                    <a href="#about">About</a>
+                    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="MakeNavResponsive()">&#9776;</a>
+                </div>
+            </div>
+        </div>          
+        <br/>
+        <div class="col-md-12 text-center round-corners2">
+            <h3>Contact Us</h3>
+        </div>
+        <br/>
+        <div class="row">
+            <div class="col-md-4">
+                    <div class="card bg-light text-center">
+                            <div class="card-header">
+                                    <table>
+                                            <tr>
+                                                <td><img src="images/mail.png"/></td>
+                                                <td class="padding-left5"><h5>Feel free to contact us</h5></td>
+                                            </tr>
+                                        </table>
+                                    
+                            </div>
+                            <div class="card-body">
+                                    <form>
+                                            <div class="input-group">
+                                              <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                              <input id="username" type="text" class="form-control" name="username" placeholder="Name">
+                                            </div>
+                                            <div class="input-group margin20">
+                                              <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                                              <input id="useremail" type="text" class="form-control" name="useremail" placeholder="Email">
+                                            </div>
+                                            <div class="input-group margin20">
+                                                    <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+                                                    <input id="userphone" type="text" class="form-control" name="userphone" placeholder="Phone">
+                                                  </div>
+                                            <div class="input-group margin20">
+                                              <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                                              <textarea id="usermessage" class="form-control" rows="10" name="usermessage" placeholder="Your Message..."></textarea>
+                                            </div>
+                                            <button type="sendmessage" class="btn btn-info margin20">Send</button>
+                                          </form>
+                            </div>
+                            <div class="card-footer">
+                                    <table align="center">
+                                            <tr>
+                                                <td><a href="#"><img src="images/facebook.png"/></a></td>
+                                                <td><a href="#"><img src="images/twitter.png"/></a></td>
+                                                <td><a href="#"><img src="images/googleplus.png"/></a></td>
+                                                <td><a href="#"><img src="images/linkedin.png"/></a></td>
+                                                <td><a href="#"><img src="images/rss.png"/></a></td>
+                                            </tr>
+                                        </table>
+                                  </div>
+                          </div>
+                
+                    
+                          <hr/>
+            </div>  
+            <div class="col-md-8">
+                    <div class="card bg-light">
+                            <div class="card-header">
+                                    <table>
+                                        <tr>
+                                            <td><img src="images/location.png"/></td>
+                                            <td><h5 class="padding-left5">Our Office</h5></td>
+                                        </tr>
+                                    </table>
+                            </div>
+                            <div class="card-body">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9540.479483508836!2d-6.253589213761722!3d53.28738772946518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670971f7c894fd%3A0xe84c04a6d359ebcd!2sMovies%40Dundrum!5e0!3m2!1sen!2sie!4v1523475089176"
+                                    width="100%" height="379" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                    <hr/>
+                                    <h5 class="card-title">Movies@Dundrum</h5>
+                            <p class="card-text"><br/>Dundrum Town Centre <br/>Dundrum, Dublin 14, <br/>Ireland Film Information and Bookings: <b>1520 880 333</b></p>
+                          
+                            </div>
+                          </div>
+                
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
